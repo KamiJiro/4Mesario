@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Viñeta</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    body {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .boton {
+      display: inline-block;
+      margin-top: 20px;
+      background: orange;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+
+    .boton:hover {
+      background: darkorange;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <img src="https://m.media-amazon.com/images/I/81++blgFgJL.jpg" alt="fondo" class="fondo">
+  <!-- Viñeta 1 -->
+  <div class="viñeta-box">
+    <div class="bocadillo">Creo que ya estamos a salvo...</div>
+  </div>
+
+  <!-- Viñeta 2 -->
+  <div class="viñeta-box">
+    <div class="bocadillo">¿Dónde estamos?</div>
+    <div class="bocadillo">¿Un castillo?</div>
+  </div>
+
+  <!-- Viñeta 3 -->
+  <div class="viñeta-box">
+    <img src="https://i.pinimg.com/736x/7d/81/0c/7d810cdc81f75439fd1e9b7d55856c12.jpg" alt="Castillo" class="imagen">
+    <div class="bocadillo">Te equivocaste otra vez, ainch...</div>
+    <div class="bocadillo">Mierda nos vieron unos soldados!!!</div>
+    <div class="bocadillo">Corre que nos van a capturar!</div>
+    <img src="https://i.pinimg.com/736x/f6/71/9b/f6719b94d857f38f1c0a34e9de1eaaa3.jpg" alt="Castillo" class="imagen">
+  </div>
+
+  <!-- Botón siguiente -->
+  <div class="mando">
+    <button class="boton-mando rojo" onclick="location.href='./pagina4.html'"></button>
+    <button class="boton-mando azul" onclick="location.href='./pagina4.html'"></button>
+  </div>
+
+</body>
+</html>
