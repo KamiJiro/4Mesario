@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hazme clic</title>
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    @keyframes text-pop-up-top {
+  0% {
+    transform: translateY(0);
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    transform: translateY(-50px);
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #000000, 0 2px 0 #000000, 0 3px 0 #000000, 0 4px 0 #000000, 0 5px 0 #000000, 0 6px 0 #000000, 0 7px 0 #000000, 0 8px 0 #000000, 0 9px 0 #000000, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+    .bienvenida {
+      font-size: 120px;
+      color: red;
+      margin-bottom: 20px;
+      animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="bienvenida">Holaaaa Eider chan❤️</h1>
+  <h2>Este es un mando a distancia, toca el boton...</h2>
+  <div class="mando">
+    <button class="boton-mando rojo" onclick="location.href='./escenariosEpicos/pagina1.html'"></button>
+    <button class="boton-mando azul" onclick="location.href='./escenariosEpicos/pagina1.html'"></button>
+  </div>
+</body>
+</html>

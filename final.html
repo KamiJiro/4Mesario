@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Felicidades ❤️</title>
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    body {
+      text-align: center;
+      padding-top: 100px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    video#bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1; 
+      object-fit: cover; 
+    }
+
+    body {
+      margin: 0;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      color: white;
+      text-shadow: 2px 2px 4px black;
+    }
+    @keyframes text-pop-up-top {
+  0% {
+    transform: translateY(0);
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    transform: translateY(-50px);
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #000000, 0 2px 0 #000000, 0 3px 0 #000000, 0 4px 0 #000000, 0 5px 0 #000000, 0 6px 0 #000000, 0 7px 0 #000000, 0 8px 0 #000000, 0 9px 0 #000000, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+    h1 {
+      font-size: 50px;
+      color: rgb(151, 112, 184);
+      margin-top: 55px;
+      margin-bottom: 20px;
+      animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    .mensaje {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 2px solid lightblue;
+      border-radius: 10px;
+      background-color: rgba(173, 216, 230, 0.2);
+    }
+    p {
+      font-size: 24px;
+      color: rgb(230, 199, 230);
+    }
+    img {
+      max-width: 300px;
+      margin: 20px;
+    }
+    .regalo {
+      margin-top: 20px;
+      padding: 20px;
+      border: 2px solid lightblue;
+      border-radius: 10px;
+      background-color: rgba(173, 216, 230, 0.2);
+    }
+    .regaloP {
+      font-size: 30px;
+      color: lightblue;
+      margin-top: 30px;
+    }
+    .boton-descarga {
+      display: inline-block;
+      background: #27cae7;
+      color: white;
+      padding: 15px 30px;
+      font-size: 28px;
+      font-family: Arial, sans-serif;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: 0.3s;
+      
+    }
+    .boton-descarga:hover {
+      background: #1d93a8;
+      transform: scale(1.05);
+    }
+    .imagenR {
+      max-width: 90%;
+      height: auto;
+      border-radius: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <video id="bg-video" autoplay muted loop>
+    <source src="./cloud-towers-above-tokyo.1920x1080.mp4" type="video/mp4">
+    Tu navegador no soporta video.
+  </video>
+  
+  <h1>¡Feliz 4 mesario mi chica hermosha! 💝💝</h1>
+  <div class="mensaje"><p>Amor mío, te dare todo lo que una vez te prometí darte , tal <br>
+    vez ahora solo sean pequeños detalles, pero quiero que <br>
+    sepas que mi amor por ti es mucho mas grande que <br>
+     cualquer regalo . Lo que más me llena de felicidad es poder darte todo mi cariño , mi tiempo , mis detalles y, sobre todo, <br>
+     mi corazón <br>
+  </p>
+  <p>Te prometo que estudiaré y me esforzaré cada día para que <br>
+  tengos un futuro maravilloso juntos , un futuro en el que <br>
+  nunca te falte nada y siempre te sientas amada como ahora ❤ .<br>
+  Sé que habrá días malos , pero incluso en ellos seguiré amándote <br>
+con la misma fuerza con la que hago ahora . </p>
+<p>Yo te daré todo de mí por ti, por nosotrtos . Si pudiera bajarte la luna <br>
+lo haría, pero como no esta en mis manos , te entrego lo mas valioso que tengo : <br>
+mi corazón y todo mi amor , solo para ti. <br>
+Tú y yo, siempre, mi vida .Gracias por amarme tanto .</p>
+<img src="https://www.gifss.com/comics/hello_kitty/images/gif-hello-kitty-27.gif" alt="Corazón" class="imagen"></div>
+  
+  <div class="regalo"><p class="regaloP">Este es un regalo que te hecho para ti , espero que te guste . lo hice con mucho cariño , dedicación y mucha paciencia </p>
+    <img class="imagenR" src="./regalo/TeAmo.jpg" alt="regalo">
+<a class="boton-descarga" href="./regalo/TeAmo.jpg" download="te_amo.jpg">
+    Descargar Imagen
+  </a>
+
+  </div></body>
+</html>
